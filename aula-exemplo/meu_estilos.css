@@ -1,0 +1,14 @@
+/* No css nao pode colocar nada de tags html e nem do javascript */
+
+/* <h1></h1> ERRADO */
+
+/* function teste(){} ERRADO */
+
+
+.cor_do_titulo {
+  color: silver;
+}
+
+.cor_do_paragrafo {
+  color: tomato;
+}
