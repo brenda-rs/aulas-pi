@@ -1,0 +1,20 @@
+.retangulo {
+  width: 50%;
+}
+
+.retangulo_preta {
+  background-color: yellow;
+}
+
+.ratangulo_altura_400 {
+  background-color: red;
+  height: 400px;
+}
+
+.ratangulo_altura_50 {
+  height: 50px;
+}
+
+.ratangulo_cor_ultimo {
+  background-color: grey;
+}

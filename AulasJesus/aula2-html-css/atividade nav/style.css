@@ -8,12 +8,14 @@ header{
     width: 100%;
     height: 10vh;
     padding-top: 10px;
+    border-bottom: 4px solid rgb(0, 255, 255);
+    
 }
 .logo{
     font-family: 'Roboto', sans-serif;  
 }
 .cor{
-    color: orangered;
+    color: rgb(0, 255, 255);
 }
 .container{
     max-width: 60%;
@@ -23,12 +25,16 @@ header{
 .container h1{
     float: left;
     color: white;
+    
+    
 }
 .container nav{
     float: right;
     color: white;
     margin-top: 15px;
     list-style: none;
+    
+    
 }
 .container li{
     margin-left: 2rem;
@@ -37,6 +43,97 @@ header{
     display: inline-block;
 }
 .container li:hover{
-    color: orangered;
+    color: rgb(0, 255, 255);
     text-decoration: underline;
+}
+.apresentacao{
+    text-align: center;
+    padding: 220px;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-image: url(https://image.freepik.com/vetores-gratis/malha-de-arame-3d-cidade-baixa-poli-inteligente-conceito-de-negocio-de-sistema-de-automacao-predial-inteligente-fluxo-de-dados-de-numero-de-codigo-binario-arquitetura-urbana-paisagem-urbana-tecnologia-desenho-ilustracao_115739-381.jpg);
+    background-repeat: no-repeat;
+    height: 150px;
+    
+}
+.container.apresentacao{
+    font-size: 50px;
+    font-family:'Roboto', sans-serif;
+}
+/* sessão de icones */
+.conteudo .caixa {
+    padding: 60px 50px 100px 50px;/* PREENCHIMENTO SUPERIOR DA DIV CAIXA */
+    margin-bottom: 25px;
+   
+}
+
+.conteudo .caixa .missão {
+    max-width: 30%; /* LARGURA MÁXIMA DA DIV MISSÃO */
+    float: left; /* A DIV MISSÃO FLUTUA PARA A ESQUERDA */
+    text-align: center; /* OALINHAMENTO HORIZONTAL DO TEXTO */
+    margin-right: 60px; /* SOMENTE SE TIVER MARGIN, TODAS AS 4 MARGENS TERÃO 0 */
+    margin-left: 10px; /* MARGEM ESQUERDA DA DIV MISSÃO */
+
+}
+
+.conteudo .caixa .valores {
+    max-width: 30%; /* LARGURA MÁXIMA DA DIV MISSÃO */
+    float: left; /* A DIV MISSÃO FLUTUA PARA A ESQUERDA */
+    text-align: center; /* OALINHAMENTO HORIZONTAL DO TEXTO */
+    margin: -15px 60px 0 0; /* SOMENTE SE TIVER MARGIN, TODAS AS 4 MARGENS TERÃO 0 */
+    
+}
+
+.conteudo .caixa .visão {
+    max-width: 30%; /* LARGURA MÁXIMA DA DIV MISSÃO */
+    float: left; /* A DIV MISSÃO FLUTUA PARA A ESQUERDA */
+    text-align: center; /* ALINHAMENTO HORIZONTAL DO TEXTO */
+    margin: 0; /* SOMENTE SE TIVER MARGIN, TODAS AS 4 MARGENS TERÃO 0 */
+}
+
+.icone {
+    width: 180px; /* LARGURA DAS 3 IMAGENS */
+}
+/* envio de email */
+.container2{
+    background-color: #232323;
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+}
+.caixa{
+    max-width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;  
+}
+.mensgRodape{
+    color: white;
+     float: left;
+     margin: 18px auto;
+}
+.btEnviar{
+    background: rgb(0, 255, 255);
+    color: white; float: right;
+    margin-left: 15px;
+    height: 30px;
+    margin: 20px auto;
+}
+.ipt{
+  float: right;
+  height: 25px;
+  margin: 20px auto;
+}
+
+footer {
+    background-color: rgba(0, 255, 255, 0.192); /* COR DO FUNDO DA DIV FOOTER */
+    height: 80px; /* ALTURA DA DIV */
+}
+
+footer p {
+    margin: 0; /* SOMENTE SE TIVER MARGIN, TODAS AS 4 MARGENS TERÃO 0 */
+    color: black; /* COR DA FRASE P */
+    padding-top: 30px; /* PREENCHIMENTO SUPERIOR DA DIV FOOTER */
+    text-align: center; /* ALINHAMENTO HORIZONTAL DO TEXTO */
+    font-size: 15px;
 }
