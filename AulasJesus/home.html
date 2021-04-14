@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js" 
+    integrity="sha512-RGbSeD/jDcZBWNsI1VCvdjcDULuSfWTtIva2ek5FtteXeSjLfXac4kqkDRHVGf1TwsXCAqPTF7/EYITD0/CTqw==" 
+    crossorigin="anonymous">
+  </script>
+    <title>Gráfico PI</title>
+  </head>
+  <body>
+    <div style="width: 50%; height: 100px">
+      <canvas id="chart"></canvas>
+    </div>
+  </body>
+</html>
+<script>
+  // Cria o contexto do CANVAS
+  var ctx = chart.getContext("2d");
+
+  // Configuracao do grafico
+  var config = {
+    type: "bar", // Aqui falo qual modelo de grafico vou querer
+    data: {
+      labels: ["janeiro", "fevereiro", "março", "abril", "maio", "junho","julho","agosto","setembro"], // Aqui são as legendas do grafico
+      datasets: [
+        {
+          label: "Meses do ano", // Titulo do grafico
+          data: [7, 4, 13, 5, 2, 3, 9, 5, 7, 8, 9], // Dados do grafico
+          backgroundColor: [
+          "b7094c",
+           "a01a58", 
+           "892b64", 
+           "723c70", 
+           "5c4d7d", 
+           "455e89",
+           "2e6f95",
+           "1780a1",
+           "0091ad"
+          ],
+          borderColor: [
+            "rgb(183, 9, 76)",
+            "rgb(160, 26, 88)",
+            "rgb(137, 43, 100)",
+            "rgb(114, 60, 112)",
+            "rgb(92, 77, 125)",
+            "rgb(69, 94, 137)",
+            "rgb(46, 111, 149)",
+            "rgb(23, 128, 161)",
+            "rgb(0, 145, 173)"
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true, // Especifico para o grafico comecar a partir do valor 0 no eixo Y
+        },
+      },
+    },
+  };
+
+  new Chart(ctx, config); // Aqui chamo a funcao Chart que foi inserida no meu projeto na linha 7
+</script>
